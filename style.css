@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#search {
+    padding: .5rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.card {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #5f0a87;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    border-radius: 30px;
+    max-width: 60%;
+    margin: 1rem auto;
+    transition: all .5s;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, .3);
+}
+
+.card img {
+    width: 130px;
+    border-radius: 50%;
+}
+
+.card ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.card ul li {
+    margin-right: 2rem;
+    font-weight: bold;
+    
+}
+
+.card h2 {
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+
+.card p {
+    font-size: .823rem;
+}
+
+.card ul li i {
+    margin-right: .3rem;
+    font-size: 1rem;
+    opacity: .5;
+}
+
+.repo {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #3b0653;
+    color: white;
+    padding: .2rem .5rem;
+    margin-right: .5rem;
+    margin-top: .5rem;
+    font-size: .7rem;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 425px) {
+    .card {
+        margin: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    body {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }     
+
+    .card img {
+        width: 100px;
+    }
+
+    .card ul li {
+        margin-right: 1rem;
+        font-size: .7rem;
+    }
+    
+    .card h2 {
+        font-size: 1.3rem;
+    }
+    
+    .card p {
+        font-size: .7rem;
+    }
+    
+    .card ul li i {
+        font-size: .6rem;
+    }
+
+    .repo {
+        margin-right: .3rem;
+        margin-top: .3rem;
+        font-size: .5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        margin: 1rem 0;
+    }
+
+    .card img {
+        width: 130px;
+    }
+
+    .card ul li {
+        margin-right: 1rem;
+        font-size: .7rem;
+    }
+    
+    .card h2 {
+        margin-top: 0;
+        font-size: 1.3rem;
+    }
+    
+    .card p {
+        font-size: .7rem;
+    }
+    
+    .card ul li i {
+        font-size: .6rem;
+    }
+
+    .repo {
+        margin-right: .3rem;
+        margin-top: .3rem;
+        font-size: .5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        max-width: 80%;
+    }
+}
